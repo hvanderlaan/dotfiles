@@ -66,3 +66,11 @@ fi
 if [ -f ~/.zfunctions ]; then
 	source ~/.zfunctions
 fi
+
+## deploy vim config if .vimrc does not exist
+if [ ! -f ~/.vimrc ]; then
+    if [ -f ~/.vim_runtime/install_awesome_vimrc.sh ]; then
+        sh ~/.vim_runtime/install_awesome_vimrc.sh
+    fi
+fi
+
