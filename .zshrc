@@ -68,6 +68,7 @@ if [ -f ~/.zfunctions ]; then
 fi
 
 ## deploy vim config if .vimrc does not exist
+# configs from: https://github.com/amix/vimrc
 if [ ! -f ~/.vimrc ]; then
     if [ -f ~/.vim_runtime/install_awesome_vimrc.sh ]; then
         sh ~/.vim_runtime/install_awesome_vimrc.sh
